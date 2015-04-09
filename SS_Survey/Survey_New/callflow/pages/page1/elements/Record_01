@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voice_element id="Element@19088182:1427954929637" name="Record_01" version="6.0.1">
+<config>
+<settings>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">3</setting>
+<setting name="start_with_beep">true</setting>
+<setting name="terminate_on_dtmf">true</setting>
+<setting name="keep_recording_on_hangup">false</setting>
+<setting name="max_record_time">90s</setting>
+<setting name="final_silence">4s</setting>
+<setting name="filename">{Data.Session.random}</setting>
+<setting name="file_type">wav</setting>
+<setting name="extension">.wav</setting>
+<setting name="path">C:\Cisco\CVP\SurveyAppRecordings</setting>
+<setting name="ftp_host"></setting>
+<setting name="ftp_user"></setting>
+<setting name="ftp_password"></setting>
+<setting name="ftp_path"></setting>
+<setting name="ftp_in_background">true</setting>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes></audio_item_notes>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[{Data.Session.tts}]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

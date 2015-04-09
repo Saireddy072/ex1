@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page id="Page@29112607:1427565647117" name="page1" version="6.0.1">
+<element height="46" id="Element@9976025:1427565647117" name="Start Of Call" start_of_call="true" type="Page Entry" width="113" x="234" y="-69">
+<exit_states>
+<exit_state name="next" target="Element@9077757:1427565744743"/>
+</exit_states>
+</element>
+<element height="46" id="Element@14075627:1427565737714" name="No_of_Qn" type="Decision" width="112" x="238" y="177">
+<exit_states>
+<exit_state name="yes" target="Element@22385279:1427565805909"/>
+<exit_state name="no" target="Element@15619088:1427565866677"/>
+</exit_states>
+</element>
+<element height="46" id="Element@9077757:1427565744743" name="welcome" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="99" x="243" y="2">
+<exit_states>
+<exit_state name="done" target="Element@25229100:1427572515040"/>
+</exit_states>
+</element>
+<element height="46" id="Element@22385279:1427565805909" name="Chk_Qn_Type" type="Decision" width="123" x="238" y="267">
+<exit_states>
+<exit_state name="Message" target="Element@1311953:1427565921717"/>
+<exit_state name="scale" target="Element@31084133:1427565935335"/>
+<exit_state name="yes_no" target="Element@29528605:1427565929885"/>
+<exit_state name="Record" target="Element@10834224:1428356912134"/>
+</exit_states>
+</element>
+<element height="46" id="Element@15619088:1427565866677" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="183" x="518" y="159">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1311953:1427565921717" name="Message" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="99" x="307" y="409">
+<exit_states>
+<exit_state name="done" target="Element@14075627:1427565737714">
+<bendpoint>
+<dim1 x="94" y="7"/>
+<dim2 x="156" y="239"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="99" y="-143"/>
+<dim2 x="161" y="89"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@29528605:1427565929885" name="yes_no" src="com.audium.server.voiceElement.menu.MFoundation2OptionMenu" type="Voice Element" width="151" x="123" y="409">
+<exit_states>
+<exit_state name="option1" target="Element@24314105:1427566151400"/>
+<exit_state name="option2" target="Element@24314105:1427566151400"/>
+<exit_state name="max_nomatch" target="Element@24314105:1427566151400"/>
+<exit_state name="max_noinput" target="Element@24314105:1427566151400"/>
+</exit_states>
+</element>
+<element height="46" id="Element@31084133:1427565935335" name="scale" src="com.audium.server.voiceElement.menu.MFoundation5OptionMenu" type="Voice Element" width="151" x="479" y="409">
+<exit_states>
+<exit_state name="option1" target="Element@32825063:1427566148460"/>
+<exit_state name="option2" target="Element@32825063:1427566148460"/>
+<exit_state name="option3" target="Element@32825063:1427566148460"/>
+<exit_state name="option4" target="Element@32825063:1427566148460"/>
+<exit_state name="option5" target="Element@32825063:1427566148460"/>
+<exit_state name="max_nomatch" target="Element@32825063:1427566148460"/>
+<exit_state name="max_noinput" target="Element@32825063:1427566148460"/>
+</exit_states>
+</element>
+<element height="46" id="Element@32825063:1427566148460" name="Action_01" type="Action" width="102" x="451" y="501">
+<exit_states>
+<exit_state name="done" target="Element@14075627:1427565737714">
+<bendpoint>
+<dim1 x="287" y="0"/>
+<dim2 x="495" y="324"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="288" y="-318"/>
+<dim2 x="496" y="6"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@24314105:1427566151400" name="Action_02" type="Action" width="102" x="136" y="509">
+<exit_states>
+<exit_state name="done" target="Element@14075627:1427565737714">
+<bendpoint>
+<dim1 x="-158" y="-2"/>
+<dim2 x="-252" y="330"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-162" y="-331"/>
+<dim2 x="-256" y="1"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@25229100:1427572515040" name="CallDP" type="Action" width="102" x="238" y="95">
+<exit_states>
+<exit_state name="done" target="Element@14075627:1427565737714"/>
+</exit_states>
+</element>
+<element height="46" id="Element@19088182:1427954929637" name="Record_01" src="com.audium.server.voiceElement.record.MRecord" type="Voice Element" width="104" x="675" y="407">
+<exit_states>
+<exit_state name="done" target="Element@9940011:1428398466167"/>
+<exit_state name="max_noinput" target="Element@15619088:1427565866677"/>
+</exit_states>
+</element>
+<element height="46" id="Element@10834224:1428356912134" name="Recording name" type="Action" width="137" x="492" y="263">
+<exit_states>
+<exit_state name="done" target="Element@19088182:1427954929637"/>
+</exit_states>
+</element>
+<element height="46" id="Element@9940011:1428398466167" name="Action_03" type="Action" width="102" x="647" y="473">
+<exit_states>
+<exit_state name="done" target="Element@14075627:1427565737714"/>
+</exit_states>
+</element>
+</page>

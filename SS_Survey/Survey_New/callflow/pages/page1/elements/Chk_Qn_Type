@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decision id="Element@22385279:1427565805909" name="Chk_Qn_Type" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Chk_Qn_Type" default_exit_state="yes_no">
+        <exit_state name="Message" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <session name="type" />
+                </data>
+                <constant_string value="Message" />
+            </string>
+        </exit_state>
+        <exit_state name="scale" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <session name="type" />
+                </data>
+                <constant_string value="scale" />
+            </string>
+        </exit_state>
+        <exit_state name="Record" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <session name="type" />
+                </data>
+                <constant_string value="Record" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

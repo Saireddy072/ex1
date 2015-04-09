@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action id="Element@10834224:1428356912134" name="Recording name" version="6.0.1">
+<config>
+<source type="Class">com.Random1</source>
+</config>
+</action>

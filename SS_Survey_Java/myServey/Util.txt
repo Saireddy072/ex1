@@ -1,0 +1,70 @@
+package ak.akhil;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Date;
+
+public class Util {
+	public Connection con = null;
+	public Statement statement = null;
+	/**
+	 * the below is constructor will be called whenever an object will be created for this class.
+	 * and it will initialize the connection, statement and driver.
+	 */
+	public Util() {
+		try{
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+			this.con = DriverManager.getConnection("jdbc:sqlserver://10.1.6.196:1433;databaseName=SurveyDb;user=speech;password=soft;");
+			this.statement = con.createStatement();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	/**
+	 * This method is used to check the customer for active and without startdate and endDate.
+	 * @param surveyID and @return boolean value
+	 */
+	public boolean checkForActiveWithDate(String surveyID){
+		ResultSet rs = null;
+		try{
+			String query = "select Active,StartDate,EndDate from Survey where ID='"+surveyID;
+			boolean active = false;
+			Date currentDate = new Date();
+			Date startDate = new Date();
+			Date endDate = new Date();
+			rs = statement.executeQuery(query);
+			if(rs.next()){
+				active = rs.getBoolean(1);
+				startDate = rs.getDate(2);
+				endDate = rs.getDate(3);
+			}
+			if(active){
+				//Comparing the current date with startdate and end date. 
+				if(currentDate.compareTo(startDate)==1 && currentDate.compareTo(endDate)==1){
+					return true;
+				}
+			}
+		}catch(Exception exp){
+			exp.printStackTrace();
+		}
+		return false;
+	}
+	/**
+	 * The below method is to update the table info about the customer who is interested in survey.
+	 * @param surveyID, @param ani, @param dnis, @param lang, @param accepted, @param created, @return status
+	 */
+	public int updateSurveyRecord(String surveyID,String ani, String dnis, String lang, boolean accepted, Date created){
+		int status = 0;
+		try{
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");	
+			//Updating the values in db that is ANI, DNIS, Language, Accepted, Created based on surveyID.
+			String query = "UPDATE SurveyAcceptance SET ANI="+ani+",DNIS="+dnis+",Language="+lang+",Accepted="+accepted+",Created="+created+" where ID="+surveyID;
+			status = statement.executeUpdate(query);
+		}catch(Exception exp){
+			exp.printStackTrace();
+		}
+		return status;//if the value of status is more than 1 then row is updated successfully.
+	}
+}

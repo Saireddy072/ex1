@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page id="Page@22232149:1421863549670" name="page1" version="6.0.1">
+<element height="46" id="Element@2244610:1421863549668" name="Start Of Call" start_of_call="true" type="Page Entry" width="113" x="296" y="30">
+<exit_states>
+<exit_state name="next" target="Element@919445:1421863593282"/>
+</exit_states>
+</element>
+<element height="46" id="Element@10216362:1421863562711" name="Welcome" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="100" x="302" y="160">
+<exit_states>
+<exit_state name="done" target="Element@20596406:1421863574818"/>
+</exit_states>
+</element>
+<element height="46" id="Element@20596406:1421863574818" name="Get_Survey_ID" type="Action" width="124" x="290" y="252">
+<exit_states>
+<exit_state name="done" target="Element@26250901:1422035372671"/>
+</exit_states>
+</element>
+<element height="46" id="Element@919445:1421863593282" name="CVP Subdialog Start_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="172" x="266" y="89">
+<exit_states>
+<exit_state name="done" target="Element@10216362:1421863562711"/>
+</exit_states>
+</element>
+<element height="46" id="Element@10986548:1421863595274" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="183" x="653" y="526">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="46" id="Element@18675759:1422035337972" name="Is_Servey_Active" type="Decision" width="135" x="282" y="419">
+<exit_states>
+<exit_state name="Yes" target="Element@6836957:1422038268688"/>
+<exit_state name="No" target="Element@10986548:1421863595274"/>
+</exit_states>
+</element>
+<element height="46" id="Element@26250901:1422035372671" name="get_Active" type="Action" width="105" x="301" y="349">
+<exit_states>
+<exit_state name="done" target="Element@18675759:1422035337972"/>
+</exit_states>
+</element>
+<element height="46" id="Element@30342126:1422035739214" name="Update_Survey_acceptance" type="Action" width="193" x="258" y="621">
+<exit_states>
+<exit_state name="done" target="Element@10986548:1421863595274">
+<bendpoint>
+<dim1 x="178" y="4"/>
+<dim2 x="-127" y="-2"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@6836957:1422038268688" name="offer_survey" src="com.audium.server.voiceElement.menu.MFoundation2OptionMenu" type="Voice Element" width="151" x="278" y="513">
+<exit_states>
+<exit_state name="option1" target="Element@30342126:1422035739214"/>
+<exit_state name="option2" target="Element@30342126:1422035739214"/>
+<exit_state name="max_nomatch" target="Element@10986548:1421863595274"/>
+<exit_state name="max_noinput" target="Element@10986548:1421863595274"/>
+</exit_states>
+</element>
+</page>

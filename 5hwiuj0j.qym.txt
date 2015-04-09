@@ -1,0 +1,156 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch develop
+# Your branch is up-to-date with 'origin/develop'.
+#
+# Changes to be committed:
+#	new file:   SS_PreSurvey/Survey_Sai_new/.doc_revision
+#	new file:   SS_PreSurvey/Survey_Sai_new/.project
+#	new file:   SS_PreSurvey/Survey_Sai_new/.settings
+#	new file:   SS_PreSurvey/Survey_Sai_new/app.callflow
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/.callflow
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/pages/page1/.page
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/pages/page1/elements/CVP Subdialog Return_01
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/pages/page1/elements/CVP Subdialog Start_01
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/pages/page1/elements/Get_Survey_ID
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/pages/page1/elements/Is_Servey_Active
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/pages/page1/elements/Update_Survey_acceptance
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/pages/page1/elements/Welcome
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/pages/page1/elements/get_Active
+#	new file:   SS_PreSurvey/Survey_Sai_new/callflow/pages/page1/elements/offer_survey
+#	new file:   SS_PreSurvey/Survey_Sai_new/deploy/java/application/lib/Survey_Sai.jar
+#	new file:   SS_PreSurvey_Java/Java.txt
+#	new file:   SS_Survey/Survey_New/.doc_revision
+#	new file:   SS_Survey/Survey_New/.project
+#	new file:   SS_Survey/Survey_New/.settings
+#	new file:   SS_Survey/Survey_New/app.callflow
+#	new file:   SS_Survey/Survey_New/callflow/.callflow
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/.page
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/Action_01
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/Action_02
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/Action_03
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/CVP Subdialog Return_01
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/CallDP
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/Chk_Qn_Type
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/Message
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/No_of_Qn
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/Record_01
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/Recording name
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/scale
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/welcome
+#	new file:   SS_Survey/Survey_New/callflow/pages/page1/elements/yes_no
+#	new file:   SS_Survey/Survey_New/deploy/java/application/lib/new_survey_java.jar
+#	new file:   SS_Survey_Java/myServey/.classpath
+#	new file:   SS_Survey_Java/myServey/.project
+#	new file:   SS_Survey_Java/myServey/Util.txt
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/GetActionValue.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/GetActiveSurvey.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/GetSurveyID.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/SurveyActive.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/SurveyID.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/UpdateSurveyAcceptance.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/UpdateSurveyOffer.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/UpdateSurveyResult.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/UpdateSurveyResult5.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/Util.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/matchSurveyID.class
+#	new file:   SS_Survey_Java/myServey/classes/com/sai/updateSurveyRecord.class
+#	new file:   SS_Survey_Java/myServey/src/com/sai/GetActionValue.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/GetActiveSurvey.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/GetSurveyID.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/SurveyActive.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/SurveyID.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/UpdateSurveyAcceptance.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/UpdateSurveyOffer.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/UpdateSurveyResult.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/UpdateSurveyResult5.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/Util.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/matchSurveyID.java
+#	new file:   SS_Survey_Java/myServey/src/com/sai/updateSurveyRecord.java
+#
+# Changes not staged for commit:
+#	deleted:    SS_PreSurvey/.doc_revision
+#	deleted:    SS_PreSurvey/.project
+#	deleted:    SS_PreSurvey/.settings
+#	deleted:    SS_PreSurvey/app.callflow
+#	deleted:    SS_PreSurvey/callflow/.callflow
+#	deleted:    SS_PreSurvey/callflow/pages/page1/.page
+#	deleted:    SS_PreSurvey/callflow/pages/page1/elements/SS_Audio_OfferSurvey
+#	deleted:    SS_PreSurvey/callflow/pages/page1/elements/SS_Dec_OfferSurvey
+#	deleted:    SS_PreSurvey/callflow/pages/page1/elements/SS_Subdialog_Return
+#	deleted:    SS_PreSurvey/callflow/pages/page1/elements/SS_Subdialog_Start
+#	deleted:    SS_Survey/.doc_revision
+#	deleted:    SS_Survey/.project
+#	deleted:    SS_Survey/.settings
+#	deleted:    SS_Survey/app.callflow
+#	deleted:    SS_Survey/callflow/.callflow
+#	deleted:    SS_Survey/callflow/pages/page1/.page
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Action_GetSurveyID
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Action_GetSurveyLang
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Action_LoadNext
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Action_ValidateInput
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Audio_SurveyEnd
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Audio_SurveyStart
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Decision_CheckSurveyID
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Decision_CheckType
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Decision_IsFinished
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Decision_LoadSurvey
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Record_Recordfile
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Subdialog_Start
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Survey_2_Menu
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Survey_AudioOnly
+#	deleted:    SS_Survey/callflow/pages/page1/elements/SS_Survey_Menu
+#	deleted:    SS_Survey/callflow/pages/page1/elements/Subdialog_Return
+#	deleted:    SS_Survey/deploy/java/application/classes/Survey_log4j_ivr.xml
+#	deleted:    SS_Survey/deploy/java/application/classes/Survey_settings.properties
+#	deleted:    SS_Survey_Java/.classpath
+#	deleted:    SS_Survey_Java/.project
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/application/OnApplicationStart.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/base/BaseActionElement.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/base/BaseDecisionElement.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/call/OnCallStart.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/dao/SurveyDAO.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/dao/SurveyOfferDAO.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/mainivr/GetSurvey.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/mainivr/LoadIndividualQuestion.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/mainivr/LoadQuestions.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/mainivr/LoadSurvey.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/mainivr/SurveyLanguage.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/mainivr/ValidateInput.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/util/BusinessConstants.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/util/DBConnectUtil.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/util/SurveyBean.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/util/SurveyManager.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/util/SurveyQuestion.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/util/SurveyQuestionBean.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/util/SurveyResponseBean.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/util/SurveyResponseDAO.class
+#	deleted:    SS_Survey_Java/bin/com/ss/ivr/survey/util/SurveySettingsBean.class
+#	deleted:    SS_Survey_Java/bin/log4j.properties
+#	deleted:    SS_Survey_Java/bin/survey.properties
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/application/OnApplicationStart.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/base/BaseActionElement.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/base/BaseDecisionElement.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/call/OnCallStart.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/dao/SurveyDAO.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/dao/SurveyOfferDAO.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/mainivr/GetSurvey.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/mainivr/LoadIndividualQuestion.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/mainivr/LoadQuestions.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/mainivr/LoadSurvey.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/mainivr/SurveyLanguage.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/mainivr/ValidateInput.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/util/BusinessConstants.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/util/DBConnectUtil.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/util/SurveyBean.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/util/SurveyManager.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/util/SurveyQuestion.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/util/SurveyQuestionBean.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/util/SurveyResponseBean.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/util/SurveyResponseDAO.java
+#	deleted:    SS_Survey_Java/src/com/ss/ivr/survey/util/SurveySettingsBean.java
+#	deleted:    SS_Survey_Java/src/log4j.properties
+#	deleted:    SS_Survey_Java/src/survey.properties
+#
+

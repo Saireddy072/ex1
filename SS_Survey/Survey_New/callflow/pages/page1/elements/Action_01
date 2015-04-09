@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action id="Element@32825063:1427566148460" name="Action_01" version="6.0.1">
+<config>
+<source type="Class">com.UpdateSurveyResult5</source>
+</config>
+</action>
